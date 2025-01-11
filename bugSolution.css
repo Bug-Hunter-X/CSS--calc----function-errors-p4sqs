@@ -1,0 +1,9 @@
+The corrected CSS uses proper spacing and operator precedence within the `calc()` function.  For example:
+
+```css
+width: calc(100% - 10px);
+height: calc( (100vh - 50px)/2);
+/* Proper spacing and parenthesis for complex calculations */
+```
+
+Avoid using unsupported operations within `calc()`, like mixing percentages and `em` units without proper considerations for context.  Always thoroughly test your CSS across different browsers and screen sizes to identify and address layout issues.
